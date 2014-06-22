@@ -1,4 +1,4 @@
-var latinRE = /[\xc0-\xff]/g
+var latinRE = /[\xc0-\xff\u0152-\u0153]/g
 var letters = {}
 var chars
 var map = {
@@ -15,7 +15,8 @@ var map = {
   "ÙÚÛÜ" : "U",
   "Ý" : "Y",
   "ß" : "ss",
-  "Þ" : "Th"
+  "Þ" : "Th",
+  "Œ" : "OE"
 }
 
 function use(array, letter){

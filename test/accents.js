@@ -2,8 +2,8 @@ var tape = require("tape")
 var latin = require("..")
 
 tape("accents, all chars", function(test){
-  var accented = "ÀÁÂÃÄÅàáâãäåÆæÇçÐðÈÉÊËèéêëÌÍÎÏìíîïÑñÒÓÔÕÖØòóôõöø×÷ÙÚÛÜùúûüÝýßÞþ"
-  var expected = "AAAAAAaaaaaaAEaeCcDdEEEEeeeeIIIIiiiiNnOOOOOOoooooox UUUUuuuuYyssThth"
+  var accented = "ÀÁÂÃÄÅàáâãäåÆæÇçÐðÈÉÊËèéêëÌÍÎÏìíîïÑñÒÓÔÕÖØòóôõöø×÷ÙÚÛÜùúûüÝýßÞþŒœ"
+  var expected = "AAAAAAaaaaaaAEaeCcDdEEEEeeeeIIIIiiiiNnOOOOOOoooooox UUUUuuuuYyssThthOEoe"
   test.equal(latin(accented), expected)
   test.end()
 })

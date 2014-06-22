@@ -4,7 +4,7 @@
 
 [![browser support](https://ci.testling.com/bloodyowl/latin.png)](https://ci.testling.com/bloodyowl/latin)
 
-replaces special latin (`\xc0` -> `\xff`) chars
+replaces special latin (`\xc0` -> `\xff` (& `\u0153`)) chars
 
 ## install
 
